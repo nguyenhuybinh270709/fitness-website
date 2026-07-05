@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Home - Fitness Website</title>
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 flex items-center justify-between px-6 lg:px-12 py-4 bg-black z-50"
+    >
+      <!-- Logo -->
+      <div>
+        <a
+          href="index.html"
+          class="text-3xl font-bold text-white flex items-center gap-3"
+        >
+          <i class="fa-solid fa-dumbbell text-[#e5aa56]"></i>
+          <div class="flex">
+            <span>FIT</span><span class="text-[#e5aa56]">LIFE</span>
+          </div>
+        </a>
+      </div>
+      <!-- Nav Links -->
+      <div class="hidden lg:flex items-center text-lg font-semibold gap-6">
+        <a href="index.html" class="text-white hover:text-[#e5aa56]"
+          >Trang chủ</a
+        >
+        <a href="#" class="text-white hover:text-[#e5aa56]">Dịch vụ</a>
+        <a href="classes.html" class="text-white hover:text-[#e5aa56]"
+          >Lớp học</a
+        >
+        <a href="contact.html" class="text-white hover:text-[#e5aa56]"
+          >Liên hệ</a
+        >
+      </div>
+      <!-- CTA Button -->
+      <div>
+        <button
+          class="bg-[#e5aa56] hover:bg-[#dea24f] text-black rounded-md text-base px-4 lg:px-6 py-2 font-semibold cursor-pointer transition-all duration-200 hover:scale-103 active:scale-95"
+        >
+          Tham gia ngay
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center justify-center text-white px-6 lg:px-12 py-6"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50 z-0"></div>
+      <!-- Background Image -->
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/037/228/850/small/ai-generated-exercise-machines-in-a-gym-free-photo.jpg"
+        alt="Hero Background Image"
+        class="absolute inset-0 size-full object-cover -z-10"
+      />
+      <!-- Content -->
+      <div
+        class="z-10 flex flex-col items-center gap-4 lg:gap-6 text-center lg:w-[50%]"
+      >
+        <h1 class="text-4xl lg:text-6xl font-bold uppercase">
+          Phá vỡ <span class="text-[#e5aa56]">giới hạn</span> bản thân
+        </h1>
+        <p class="text-lg lg:text-xl text-white/75">
+          Cơ sở vật chất hiện đại, huấn luyện viên chuyên nghiệp. Bắt đầu hành
+          trình thay đổi vóc dáng của bạn ngay hôm nay!
+        </p>
+        <button
+          class="w-full lg:w-fit bg-[#e5aa56] hover:bg-[#dea24f] text-black rounded-md text-lg lg:text-xl px-6 py-2.5 font-semibold cursor-pointer transition-all duration-200 hover:scale-103 active:scale-95"
+        >
+          Đăng ký tập thử MIỄN PHÍ
+        </button>
+      </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section
+      class="flex flex-col items-center justify-center bg-[#0f0f0f] px-6 lg:px-12 py-12 lg:py-20 mx-auto"
+    >
+      <!-- Title -->
+      <h2 class="text-3xl font-bold text-white uppercase mb-2.5 text-center">
+        Tại sao chọn chúng tôi?
+      </h2>
+      <div class="h-1 w-18 bg-[#e5aa56]"></div>
+
+      <!-- Cards -->
+      <div class="mt-12 grid lg:grid-cols-3 gap-10 lg:gap-8 px-4 lg:px-12">
+        <!-- Card 1 -->
+        <div
+          class="bg-[#1a1a1a] border border-transparent hover:border-[#e5aa56] flex flex-col items-center justify-center text-center gap-2 p-8 rounded-lg"
+        >
+          <i class="fa-solid fa-dumbbell text-5xl text-[#e5aa56] mb-3"></i>
+          <h3 class="text-xl font-bold text-white">Thiết bị hiện đại</h3>
+          <p class="text-gray-400">
+            Trang bị 100% máy móc nhập khẩu mới nhất, đảm bảo hiệu quả tập luyện
+            tối đa.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="bg-[#1a1a1a] border border-transparent hover:border-[#e5aa56] flex flex-col items-center justify-center text-center gap-2 p-8 rounded-lg"
+        >
+          <i class="fa-solid fa-user-ninja text-5xl text-[#e5aa56] mb-3"></i>
+          <h3 class="text-xl font-bold text-white">PT Chuyên nghiệp</h3>
+          <p class="text-gray-400">
+            Đội ngũ huấn luyện viên có chứng chỉ quốc tế, nhiệt tình và theo sát
+            học viên.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="bg-[#1a1a1a] border border-transparent hover:border-[#e5aa56] flex flex-col items-center justify-center text-center gap-2 p-8 rounded-lg"
+        >
+          <i class="fa-solid fa-clock text-5xl text-[#e5aa56] mb-3"></i>
+          <h3 class="text-xl font-bold text-white">Mở cửa 24/7</h3>
+          <p class="text-gray-400">
+            Không gò bó thời gian. Tập luyện bất cứ khi nào phù hợp với lịch
+            trình của bạn.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section
+      class="flex flex-col items-center justify-center bg-[#1a1a1a] px-6 lg:px-12 py-12 lg:py-20 mx-auto"
+    >
+      <!-- Title -->
+      <h2 class="text-3xl font-bold text-white uppercase mb-2.5 text-center">
+        Khóa học nổi bật
+      </h2>
+      <div class="h-1 w-18 bg-[#e5aa56]"></div>
+
+      <!-- Cards -->
+      <div class="mt-12 grid lg:grid-cols-3 gap-10 lg:gap-8 px-4 lg:px-12">
+        <!-- Card 1 -->
+        <div
+          class="group bg-[#0f0f0f] border border-transparent hover:border-[#e5aa56] flex flex-col gap-2 rounded-lg overflow-hidden transition-all duration-200"
+        >
+          <div class="relative w-full aspect-16/10">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl3ROqeFvDVBbvRGr9aEGEGkUdueAbJs902T8Tm7Xg_Q&s=10"
+              alt="Hero Background Image"
+              class="size-full object-cover transition-all duration-500 group-hover:scale-107"
+            />
+            <div
+              class="absolute top-4 right-4 bg-[#e5aa56] text-black font-bold text-xs rounded-full px-4 py-1"
+            >
+              -20% Ưu đãi
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-6">
+            <div>
+              <h3
+                class="text-xl font-bold text-white group-hover:text-[#e5aa56] mb-2"
+              >
+                Lột xác 30 ngày
+              </h3>
+              <p class="text-gray-400 text-sm mb-4">
+                Khóa học đốt mỡ chuyên sâu ngắn hạn. Lên tới 12 buổi/tháng cùng
+                PT cá nhân chuyên nghiệp chuẩn y khoa, giúp lấy lại tự tin chỉ
+                trong 1 tháng.
+              </p>
+            </div>
+            <div
+              class="mt-auto pt-4 flex items-center justify-between border-t border-white/15"
+            >
+              <div
+                class="w-fit p-2 bg-[#1a1a1a] rounded-md text-white text-sm font-semibold"
+              >
+                12 Buổi/Tháng
+              </div>
+              <a
+                href="contact.html"
+                class="text-sm text-[#e5aa56] font-semibold"
+              >
+                <span class="group-hover:underline">Tư vấn ngay</span>
+                <span
+                  ><i class="ml-1 text-xs fa-solid fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div
+          class="group bg-[#0f0f0f] border border-transparent hover:border-[#e5aa56] flex flex-col gap-2 rounded-lg overflow-hidden transition-all duration-200"
+        >
+          <div class="relative w-full aspect-16/10">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAY1o93IL6eZWkprpmfdJAVWPLBmLd3BbvmasiY6FWw&s=10"
+              alt="Hero Background Image"
+              class="size-full object-cover transition-all duration-500 group-hover:scale-107"
+            />
+            <div
+              class="absolute top-4 right-4 bg-[#e5aa56] text-black font-bold text-xs rounded-full px-4 py-1"
+            >
+              HOT NHẤT
+            </div>
+          </div>
+          <div class="flex flex-col flex-1 p-6">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#e5aa56] mb-2"
+            >
+              Yoga Trị Liệu & Thiền
+            </h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Tập trung cải thiện sức khỏe cột sống, đau mỏi vai gáy. Tái tạo
+              năng lượng, cân bằng tâm trí tinh thần trong nhịp sống hiện đại
+              hối hả.
+            </p>
+            <div
+              class="mt-auto pt-4 flex items-center justify-between border-t border-white/15"
+            >
+              <div
+                class="w-fit p-2 bg-[#1a1a1a] rounded-md text-white text-sm font-semibold"
+              >
+                Lớp Tự Chọn
+              </div>
+              <a
+                href="contact.html"
+                class="text-sm text-[#e5aa56] font-semibold"
+              >
+                <span class="group-hover:underline">Tư vấn ngay</span>
+                <span
+                  ><i class="ml-1 text-xs fa-solid fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div
+          class="group bg-[#0f0f0f] border border-transparent hover:border-[#e5aa56] flex flex-col gap-2 rounded-lg overflow-hidden transition-all duration-200"
+        >
+          <div class="relative w-full aspect-16/10">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkASIZo1n3wJKM-w8m0LWwD52I-_d6F9Q-a3AjVuXKDg&s=10"
+              alt="Hero Background Image"
+              class="size-full object-cover transition-all duration-500 group-hover:scale-107"
+            />
+          </div>
+          <div class="flex flex-col flex-1 p-6">
+            <h3
+              class="text-xl font-bold text-white group-hover:text-[#e5aa56] mb-2"
+            >
+              Tăng Cơ Thẩm Mỹ
+            </h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Giáo án Hypertrophy bài bản nhất. Tập trung cực tiểu hóa rủi ro và
+              cực đại hoá sự phát triển cơ bắp, hướng tới vóc dáng thể hình ấn
+              tượng.
+            </p>
+            <div
+              class="mt-auto pt-4 flex items-center justify-between border-t border-white/15"
+            >
+              <div
+                class="w-fit p-2 bg-[#1a1a1a] rounded-md text-white text-sm font-semibold"
+              >
+                16 Buổi/Tháng
+              </div>
+              <a
+                href="contact.html"
+                class="text-sm text-[#e5aa56] font-semibold"
+              >
+                <span class="group-hover:underline">Tư vấn ngay</span>
+                <span
+                  ><i class="ml-1 text-xs fa-solid fa-arrow-right"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 text-sm py-6 text-center">
+      © 2026 Nguyễn Huy Bình. Fullstack JavaScript.
+    </footer>
+  </body>
+</html>
