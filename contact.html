@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Contact - Fitness Website</title>
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 flex items-center justify-between px-6 lg:px-12 py-4 bg-black z-50"
+    >
+      <!-- Logo -->
+      <div>
+        <a
+          href="index.html"
+          class="text-3xl font-bold text-white flex items-center gap-3"
+        >
+          <i class="fa-solid fa-dumbbell text-[#e5aa56]"></i>
+          <div class="flex">
+            <span>FIT</span><span class="text-[#e5aa56]">LIFE</span>
+          </div>
+        </a>
+      </div>
+      <!-- Nav Links -->
+      <div class="hidden lg:flex items-center text-lg font-semibold gap-6">
+        <a href="index.html" class="text-white hover:text-[#e5aa56]"
+          >Trang chủ</a
+        >
+        <a href="#" class="text-white hover:text-[#e5aa56]">Dịch vụ</a>
+        <a href="classes.html" class="text-white hover:text-[#e5aa56]"
+          >Lớp học</a
+        >
+        <a href="contact.html" class="text-white hover:text-[#e5aa56]"
+          >Liên hệ</a
+        >
+      </div>
+      <!-- CTA Button -->
+      <div>
+        <button
+          class="bg-[#e5aa56] hover:bg-[#dea24f] text-black rounded-md text-base px-4 lg:px-6 py-2 font-semibold cursor-pointer transition-all duration-200 hover:scale-103 active:scale-95"
+        >
+          Tham gia ngay
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main
+      class="bg-[#1a1a1a] grid lg:grid-cols-2 gap-12 py-12 lg:py-20 px-6 lg:px-50"
+    >
+      <!-- Information Section -->
+      <section class="flex flex-col gap-4">
+        <h2 class="text-3xl text-white font-bold">Sẵn sàng thay đổi?</h2>
+        <p class="text-gray-400">
+          Đăng ký thành viên ngay hôm nay để nhận ưu đãi giảm giá lên tới 30%
+          cho tháng đầu tiên. Điền thông tin vào form bên cạnh để chuyên viên
+          của chúng tôi liên hệ với bạn.
+        </p>
+        <ul class="text-gray-300 space-y-3">
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-location-dot text-[#e5aa56]"></i> Số 123,
+            Đường ABC, Quận XYZ, Hà Nội
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-[#e5aa56]"></i> 0123.456.789
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-envelope text-[#e5aa56]"></i>
+            lienhe@fitlife.vn
+          </li>
+        </ul>
+      </section>
+      <!-- Form Section -->
+      <section class="bg-[#0d0d0d] rounded-lg p-8">
+        <h3 class="text-[1.3rem] font-bold text-white mb-4">
+          Form Đăng Ký Tư Vấn
+        </h3>
+        <form
+          action="#"
+          onsubmit="alert(`Gửi đăng ký thành công`)"
+          class="flex flex-col gap-4"
+        >
+          <div class="flex flex-col gap-2 text-gray-400">
+            <label for="txtName" class="text-[15px] font-semibold"
+              >Họ và tên *</label
+            >
+            <input
+              type="text"
+              name="txtName"
+              id="txtName"
+              placeholder="Nhập họ tên của bạn"
+              required
+              class="bg-[#1a1a1a] border border-white/20 px-4 py-2 rounded-md focus:border-[#e5aa56] focus:outline-none"
+            />
+          </div>
+          <div class="flex flex-col gap-2 text-gray-400">
+            <label for="txtPhone" class="text-[15px] font-semibold"
+              >Số điện thoại *</label
+            >
+            <input
+              type="tel"
+              name="txtPhone"
+              id="txtPhone"
+              placeholder="Ví dụ: 0987654321"
+              required
+              class="bg-[#1a1a1a] border border-white/20 px-4 py-2 rounded-md focus:border-[#e5aa56] focus:outline-none"
+            />
+          </div>
+          <div class="flex flex-col gap-2 text-gray-400">
+            <label for="slTarget" class="text-[15px] font-semibold"
+              >Mục tiêu tập luyện</label
+            >
+            <select
+              name="slTarget"
+              id="slTarget"
+              class="bg-[#1a1a1a] border border-white/20 px-4 py-2 rounded-md focus:border-[#e5aa56] focus:outline-none"
+            >
+              <option value="Giảm cân / Đốt mỡ">Giảm cân / Đốt mỡ</option>
+              <option value="Tăng cơ / Tăng cân">Tăng cơ / Tăng cân</option>
+              <option value="Cải thiện sức khỏe chung">
+                Cải thiện sức khỏe chung
+              </option>
+              <option value="Học Yoga / Dẻo dai">Học Yoga / Dẻo dai</option>
+            </select>
+          </div>
+          <div class="mt-1 flex items-start gap-2 text-gray-400">
+            <input
+              type="checkbox"
+              name="chkAgree"
+              id="chkAgree"
+              class="mt-1 size-4 accent-[#e5aa56]"
+            />
+            <label for="chkAgree" class="text-sm"
+              >Tôi đồng ý nhận thông tin tư vấn qua điện thoại và email quy
+              định.
+            </label>
+          </div>
+          <button
+            type="submit"
+            class="px-6 py-2 bg-[#e5aa56] rounded-md font-bold cursor-pointer transition-all duration-200 hover:scale-103 active:scale-95"
+          >
+            Gửi Đăng Ký
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 text-sm py-6 text-center">
+      © 2026 Nguyễn Huy Bình. Fullstack JavaScript.
+    </footer>
+  </body>
+</html>
